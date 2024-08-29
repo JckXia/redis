@@ -56,3 +56,6 @@ test:
 
 bench:
 	./redis-benchmark
+
+experiments:
+	gcc -g experiment/ae_exp.c ae.c zmalloc.c -o experiment/ae_exp
